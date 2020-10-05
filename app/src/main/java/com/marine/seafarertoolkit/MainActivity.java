@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     private GridView main_gridView;
     private GridViewAdapter gridViewAdapter;
 
+
+    private GridView main_gridView1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
