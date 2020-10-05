@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/colorAccent"
+        android:text="Please Insert Your Document Details:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/add_card_shape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+
+            <!--           <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Doc Title:"-->
+            <!--            android:textStyle="bold"-->
+            <!--            android:textSize="22sp" />-->
+
+
+            <Spinner
+                android:id="@+id/spinner_title"
+                android:layout_width="fill_parent"
+                android:layout_height="42dp"
+                android:background="@drawable/spinner_shape"
+                android:textSize="20sp"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/issue_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:boxBackgroundColor="#E7E9F8"
+                android:layout_marginBottom="10dp"
+                android:focusableInTouchMode="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date Of Issue"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/expiry_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:boxBackgroundColor="#E7E9F8"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date Of Expiry"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--        <TextView-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Issue Date:"-->
+            <!--            android:textSize="20sp"/>-->
+
+            <!--        <TextView-->
+            <!--            android:layout_width="fill_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:id="@+id/issue_date"-->
+            <!--            android:textSize="23sp"-->
+            <!--            android:paddingLeft="3dp"-->
+            <!--            android:textColor="@color/colorPrimaryDark"/>-->
+
+
+        </LinearLayout>
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        android:gravity="left"-->
+        <!--        android:layout_marginLeft="10dp"-->
+        <!--        android:layout_marginRight="40dp">-->
+
+        <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:text="Expiry Date:"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textSize="20sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            />&ndash;&gt;-->
+        <!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_width="fill_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:id="@+id/expiry_date"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textSize="23sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:paddingLeft="3dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textColor="@color/colorPrimaryDark"/>&ndash;&gt;-->
+
+
+        <!--    </LinearLayout>-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="right"
+            android:text="INSERT"
+            android:id="@+id/insert_doc" />
+
+        <!--        <DatePicker-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:id="@+id/date_picker"/>-->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="0dp"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:id="@+id/cardview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_view_shape"
+        android:orientation="vertical"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="6dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="left|center"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/linearlayout">
+
+
+            <LinearLayout
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/id"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="id"-->
+                <!--                android:textColor="#000"-->
+                <!--                android:textSize="20sp"-->
+                <!--                android:textStyle="bold" />-->
+
+                <TextView
+                    android:id="@+id/doc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Doc Title"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="#112970"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_marginBottom="15dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/doc_issue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Issue:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/doc_validation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Validation:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/doc_expiry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Expiry:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorAccent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!--            <Button-->
+                <!--                android:id="@+id/item_edit"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginBottom="10dp"-->
+                <!--                android:background="@android:color/transparent"-->
+                <!--                android:text="EDIT"-->
+                <!--                android:textColor="#3599f7"-->
+                <!--                android:textStyle="bold" />-->
+
+
+                <ImageButton
+                    android:id="@+id/item_delete"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/delete_icon" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="horizontal">-->
+
+        <!--        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/progressBar"-->
+        <!--            android:indeterminate="true"-->
+        <!--            app:spb_color="#FF0000"-->
+        <!--            app:spb_mirror_mode="false"-->
+        <!--            app:spb_progressiveStart_activated="true"-->
+        <!--            app:spb_progressiveStart_speed="1.5"-->
+        <!--            app:spb_progressiveStop_speed="3.4"-->
+        <!--            app:spb_reversed="false"-->
+        <!--            app:spb_sections_count="4"-->
+        <!--            app:spb_speed="2.0"-->
+        <!--            app:spb_stroke_separator_length="4dp"-->
+        <!--            app:spb_stroke_width="4dp" />-->
+
+        <!--        <ProgressBar-->
+        <!--            style="?android:attr/progressBarStyleHorizontal"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:paddingBottom="7dp"-->
+        <!--            android:paddingTop="4dp"-->
+        <!--            android:paddingLeft="15dp"-->
+        <!--            android:paddingRight="15dp"-->
+        <!--            android:layout_marginRight="20dp"-->
+        <!--            android:layout_marginLeft="0dp"-->
+        <!--            >-->
+
+
+        <!--        </ProgressBar>-->
+
+        <!--    </LinearLayout>-->
+
+
+        <com.white.progressview.HorizontalProgressView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="28dp" />
+
+
+        <!--        <com.daimajia.numberprogressbar.NumberProgressBar-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/progressBar"-->
+        <!--            android:layout_marginLeft="5dp"-->
+        <!--            android:layout_marginRight="25dp"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:paddingBottom="18dp">-->
+
+        <!--        </com.daimajia.numberprogressbar.NumberProgressBar>-->
+
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="#A3A0A0"-->
+        <!--            android:layout_marginLeft="15dp"-->
+        <!--            android:layout_marginRight="20dp"-->
+        <!--            android:layout_marginTop="0dp"-->
+        <!--            android:layout_marginBottom="10dp" />-->
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

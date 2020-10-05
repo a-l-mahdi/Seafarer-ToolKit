@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created And Developed By ETO Hamid"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For Any Comment, Contact:"
+        android:layout_gravity="center"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/telegram_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@Android_dev1991"
+        android:layout_gravity="center"
+        android:clickable="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/telegram"
+        android:background="@drawable/telegram"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="#000000"
+        android:layout_marginTop="18dp" />
+
+
+</LinearLayout>

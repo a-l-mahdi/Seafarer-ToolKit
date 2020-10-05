@@ -1,0 +1,2 @@
+include ':app', ':progressview-release', ':progressview-release1', ':progressview-1.0.1-javadoc', ':progressview-1.0.1-sources', ':progressview-debug'
+rootProject.name='Seafarer ToolKit'

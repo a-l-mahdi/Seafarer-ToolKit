@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".SplashScreen"
+    android:background="@drawable/background3"
+    tools:ignore="ExtraText">
+    <!--    android:backgroundTint="#10FFFFFF"-->
+    <!--    android:backgroundTintMode="src_over">-->
+
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="left"-->
+    <!--        android:layout_marginLeft="30dp">-->
+
+    <!--  -->
+
+
+    <!--    </LinearLayout>-->
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="right"-->
+    <!--        android:layout_marginRight="30dp">-->
+    <!--        -->
+    <!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:paddingBottom="70dp"
+        android:id="@+id/layout_splash">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seafarer_txt"
+            android:text="Seafarer"
+            android:textSize="45sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="left"
+            android:layout_marginLeft="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolkit_txt"
+            android:text="ToolKit"
+            android:textSize="45sp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="right"
+            android:layout_marginRight="32dp" />
+
+    </LinearLayout>
+    <!--    <Button-->
+    <!--        android:id="@+id/doc"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Insert your Doc"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+    <!--    </Button>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/show"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Show Documents List"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+    <!--    </Button>-->
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/show_add_doc_title"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Show Doc Title List"-->
+    <!--        tools:ignore="MissingConstraints">-->
+
+    <!--    </Button>-->
+
+</LinearLayout>

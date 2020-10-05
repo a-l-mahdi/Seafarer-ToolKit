@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar_without_menu" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:layout_margin="18dp"
+        android:background="@drawable/card_view_shape"
+        android:clickable="true">
+
+
+        <TextView
+            android:id="@+id/doc_title_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:text="DOC Title:"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/doc_issue_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date of Issue:"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/doc_expiry_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Date of Expiry:"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/doc_validation_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="This Doc. is Valid up to:"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/remain_days_to_validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Days remain until valid date:"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/remain_days_to_expiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Days will be expired"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorAccent" />
+
+        <com.white.progressview.HorizontalProgressView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar_show"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="28dp"
+            android:layout_margin="20dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

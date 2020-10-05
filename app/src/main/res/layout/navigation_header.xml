@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:background="@drawable/navigation_header_img"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="3dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="bottom|left"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="18dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/img_profile_navigation"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/baseline_account_circle_black_48"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="2dp"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:id="@+id/navigation_txt_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ETO"
+                android:textColor="#D3CCCC"
+                android:textSize="16sp"
+                android:layout_marginLeft="3dp" />
+
+            <TextView
+                android:id="@+id/navigation_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H.Seyedzadegan"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginLeft="3dp" />
+
+
+            <!--            <com.mikhaellopez.circularimageview.CircularImageView-->
+            <!--                android:id="@+id/img_plus_navigation"-->
+            <!--                android:layout_width="@dimen/ic_plus_width"-->
+            <!--                android:layout_height="@dimen/ic_plus_width"-->
+            <!--                android:layout_alignBottom="@id/img_profile_navigation"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:src="@drawable/ic_plus"-->
+            <!--                app:civ_shadow="true"-->
+            <!--                app:civ_shadow_radius="1" />-->
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
